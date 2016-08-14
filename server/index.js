@@ -1,0 +1,25 @@
+const express = require('express')
+const path = require('path')
+const colors = require('colors')
+
+console.log('********************************************'.grey)
+console.log('  Server is booting up...'.white)
+console.log('********************************************'.grey)
+console.log('  [Configuring Express]'.white)
+const app = express()
+console.log('  Initiate Express Server: '.yellow + 'Done'.green)
+
+const port = process.env.PORT || 1337
+console.log('  Setting Server Port: '.yellow + 'Done'.green)
+
+app.use(express.static(path.join(__dirname, '/../public')))
+console.log('  Adding Public Directory: '.yellow + 'Done'.green)
+console.log('********************************************'.grey)
+console.log('  Server status: '.yellow + 'Online'.green)
+console.log('********************************************'.grey)
+console.log('  Server is listening on port: '.yellow + port)
+console.log('********************************************'.grey)
+console.log('  You can now access the server!'.cyan)
+console.log('********************************************'.grey)
+console.log('  Listening for requests...'.cyan)
+app.listen(port)
