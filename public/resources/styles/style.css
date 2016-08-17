@@ -1,42 +1,107 @@
-@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Raleway';
 body {
-  background-image: url("/resources/images/space.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
   background-attachment: fixed;
-  font-family: 'Press Start 2P', cursive; }
+  background-color: #000000;
+  background-image: url("/resources/images/hex-bg-blackout.png"), radial-gradient(300px 500px at center, #32CD32 0%, transparent 100%, transparent);
+  background-size: 125%, 50% 100%;
+  background-position: 0 60%, 0 100%;
+  animation: move 5s linear infinite;
+  /* Extra Styles */
+  /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
+  border-right: 0;
+  border-left: 0; }
 
-.blur-bg {
-  background-image: url("/resources/images/space.jpg");
-  background-repeat: no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed; }
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .content .logo {
+    position: absolute;
+    top: -20%;
+    height: 15vh;
+    width: auto;
+    /*border: 3px solid #fff;*/
+    border-radius: 100px; }
+  .content .welcome {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: -8%;
+    top: -5%;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-20deg);
+    /* Chrome, Safari, Opera */ }
+    @media (min-width: 1250px) {
+      .content .welcome {
+        top: -2%; } }
+  .content a {
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid;
+    color: #fff;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none; }
+    .content a:hover {
+      background: rgba(255, 255, 255, 0.5);
+      color: #E1332D; }
+  .content .btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 5px;
+    max-width: 160px;
+    text-decoration: none; }
+    @media (min-width: 600px) {
+      .content .btn:nth-of-type(even) {
+        margin-right: 2.5em; }
+      .content .btn:nth-of-type(5) {
+        margin-right: 0; } }
+    .content .btn:hover {
+      text-decoration: none; }
+  .content .home {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+  .content .home:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; }
+
+.content-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+@keyframes move {
+  0% {
+    background-position: 0 60%, 0 50%; }
+  100% {
+    background-position: 0 60%, 100% 50%; } }
 
 .blur-bg.shaded {
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjEuMCIgeDI9IjAuNSIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g"), url("/resources/images/space.jpg");
-  background-size: 100%;
-  background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/space.jpg");
-  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/space.jpg");
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/resources/images/space.jpg"); }
-
-.logo {
-  height: 50%;
-  width: 50%; }
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)); }
 
 .container {
-  width: 50%;
-  height: 74%;
-  left: -webkit-calc( 50% - 25%);
-  top: 13%;
   position: absolute;
-  border-radius: 5px;
   -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px;
   text-align: center;
   -moz-box-sizing: border-box;
@@ -55,15 +120,37 @@ body {
 .container .content {
   margin: auto; }
 
+#container1 {
+  width: 50%;
+  height: 40%;
+  left: -webkit-calc( 50% - 25%);
+  top: 27.5%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px; }
+
+#container2 {
+  position: absolute;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+  width: 100%;
+  height: 5%;
+  bottom: 0; }
+
 h1, h2, a, p {
   color: white;
   font-weight: 100; }
 
 .tinted h1, .tinted h2, .tinted a, .tinted p {
   color: black;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2); }
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 45px; }
 
 h2 {
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   margin-bottom: 20px; }
 
@@ -80,31 +167,3 @@ p.related a {
 
 p.related a:hover {
   text-decoration: underline; }
-
-.os-icon {
-  font-size: 50px;
-  color: #78c042;
-  padding: 10px; }
-
-.os-icon:hover {
-  color: #4d9713; }
-
-.button {
-  margin: 10px;
-  height: 5%;
-  width: 25%;
-  min-width: 45px;
-  padding: 10px 20px;
-  border-radius: 5%;
-  cursor: default;
-  text-shadow: 0px -2px rgba(0, 0, 0, 0.2);
-  color: #ededed;
-  text-decoration: none; }
-
-.button-action {
-  background: #1c8da0;
-  border: 2px solid #006073; }
-
-.button-action:hover {
-  background: #006073;
-  border: 2px solid #1c8da0; }
