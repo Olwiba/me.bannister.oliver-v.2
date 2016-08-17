@@ -21581,19 +21581,43 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'container1', className: 'container blur-bg shaded' },
+	        { className: 'content' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'content' },
+	          { id: 'container1', className: 'container blur-bg shaded' },
 	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'Welcome, It\'s Nice to meet you!'
-	          ),
+	            'div',
+	            { className: 'content' },
+	            _react2.default.createElement('img', { src: '/resources/images/welcome.png', className: 'welcome' }),
+	            _react2.default.createElement('img', { src: '/resources/images/olwiba-logo-new.png', alt: 'Olwiba', className: 'logo' }),
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'Where did you want to go?'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'content-buttons' },
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#', className: 'btn home' },
+	                'Check Me Out!'
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#', className: 'btn home' },
+	                'Contact Me'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { id: 'container2', className: 'blur-bg shaded' },
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'This is my landing page'
+	            'Copyright © | Ollie Bannister 2016'
 	          )
 	        )
 	      );
