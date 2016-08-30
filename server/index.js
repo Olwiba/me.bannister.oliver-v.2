@@ -1,3 +1,4 @@
+const fallback = require('express-history-api-fallback')
 const express = require('express')
 const path = require('path')
 const colors = require('colors')
@@ -14,6 +15,10 @@ console.log('  Setting Server Port: '.yellow + 'Done'.green)
 
 app.use(express.static(path.join(__dirname, '/../public')))
 console.log('  Adding Public Directory: '.yellow + 'Done'.green)
+console.log('********************************************'.grey)
+const root = '/home/ollie/Workspace/me.bannister.oliver-v.2/public'
+app.use(fallback('index.html', { root }))
+console.log('  Adding History Fallback: '.yellow + 'Done'.green)
 console.log('********************************************'.grey)
 console.log('  Server status: '.yellow + 'Online'.green)
 console.log('********************************************'.grey)

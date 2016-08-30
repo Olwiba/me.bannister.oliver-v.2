@@ -14,15 +14,18 @@
     "build:watch": "cd client && webpack --progress --profile --colors --watch",
     "build-css": "node-sass --include-path scss client/scss/main.scss public/resources/styles/style.css",
     "build-css:watch": "nodemon -e scss -x \"npm run build-css\"",
-    "test": "cd client && babel-tape-runner test/*.js | tap-spec",
+    "test": "babel-tape-runner client/test/*.js | tap-spec",
     "prepare-deploy": "npm run build-css && npm run build"
   },
   "author": "Olwiba",
   "license": "GPL-3.0",
   "dependencies": {
     "express": "^4.14.0",
+    "express-history-api-fallback": "^2.0.0",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "react-github-corner": "^0.3.0",
+    "react-router": "^2.6.1"
   },
   "devDependencies": {
     "babel-loader": "^6.2.4",
