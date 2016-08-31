@@ -5,6 +5,7 @@ import Splash from './Home-Components/Splash'
 import Intro from './Home-Components/Intro'
 import About from './Home-Components/About'
 import Skills from './Home-Components/Skills'
+import History from './Home-Components/History'
 import Projects from './Home-Components/Projects'
 
 class Home extends Component {
@@ -27,6 +28,7 @@ class Home extends Component {
         <Intro/>
         <About/>
         <Skills/>
+        <History/>
         <Projects/>
       </div>
     );
