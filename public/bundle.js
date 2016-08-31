@@ -27533,7 +27533,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+			value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27551,30 +27551,89 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var Navigation = function (_Component) {
-	  _inherits(Navigation, _Component);
+			_inherits(Navigation, _Component);
 
-	  function Navigation() {
-	    _classCallCheck(this, Navigation);
+			function Navigation() {
+					_classCallCheck(this, Navigation);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Navigation).apply(this, arguments));
-	  }
+					return _possibleConstructorReturn(this, Object.getPrototypeOf(Navigation).apply(this, arguments));
+			}
 
-	  _createClass(Navigation, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'navigation' },
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'black' },
-	          'Navigation Works!'
-	        )
-	      );
-	    }
-	  }]);
+			_createClass(Navigation, [{
+					key: 'render',
+					value: function render() {
+							return _react2.default.createElement(
+									'div',
+									{ className: 'navigation' },
+									_react2.default.createElement(
+											'header',
+											{ className: 'main_h' },
+											_react2.default.createElement(
+													'div',
+													{ className: 'row' },
+													_react2.default.createElement(
+															'a',
+															{ className: 'logo', href: '#' },
+															'Olwiba'
+													),
+													_react2.default.createElement(
+															'div',
+															{ className: 'mobile-toggle' },
+															_react2.default.createElement('span', null),
+															_react2.default.createElement('span', null),
+															_react2.default.createElement('span', null)
+													),
+													_react2.default.createElement(
+															'nav',
+															null,
+															_react2.default.createElement(
+																	'ul',
+																	null,
+																	_react2.default.createElement(
+																			'li',
+																			null,
+																			_react2.default.createElement(
+																					'a',
+																					{ href: '#section-intro' },
+																					'Who Am I?'
+																			)
+																	),
+																	_react2.default.createElement(
+																			'li',
+																			null,
+																			_react2.default.createElement(
+																					'a',
+																					{ href: '#' },
+																					'Section 02'
+																			)
+																	),
+																	_react2.default.createElement(
+																			'li',
+																			null,
+																			_react2.default.createElement(
+																					'a',
+																					{ href: '#' },
+																					'Section 03'
+																			)
+																	),
+																	_react2.default.createElement(
+																			'li',
+																			null,
+																			_react2.default.createElement(
+																					'a',
+																					{ href: '#' },
+																					'Section 04'
+																			)
+																	)
+															)
+													)
+											)
+									)
+							);
+					}
+			}]);
 
-	  return Navigation;
+			return Navigation;
 	}(_react.Component);
 
 	exports.default = Navigation;
@@ -27619,9 +27678,23 @@
 	        'div',
 	        { className: 'splash' },
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'black' },
-	          'Splash page'
+	          'div',
+	          { className: 'center' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'white' },
+	            'Hi There,'
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'white' },
+	            'It\'s nice to meet you!'
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#section-intro' },
+	            'Down'
+	          )
 	        )
 	      );
 	    }
@@ -27669,12 +27742,20 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'Intro' },
+	        'section',
+	        { id: 'section-intro' },
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'black' },
-	          'Intro section'
+	          'div',
+	          { className: 'intro' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'center' },
+	            _react2.default.createElement(
+	              'h1',
+	              { className: 'white' },
+	              'Intro section'
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -27725,9 +27806,13 @@
 	        'div',
 	        { className: 'about' },
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'black' },
-	          'About page'
+	          'div',
+	          { className: 'center' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'black' },
+	            'About page'
+	          )
 	        )
 	      );
 	    }

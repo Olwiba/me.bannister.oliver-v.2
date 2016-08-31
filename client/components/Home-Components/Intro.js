@@ -4,9 +4,13 @@ class Intro extends Component {
 
   render() {
     return (
-      <div className='Intro'>
-        <h1 className='black'>Intro section</h1>
-      </div>
+      <section id='section-intro'>	
+        <div className='intro'>
+          <div className='center'>
+            <h1 className='white'>Intro section</h1>
+          </div>
+        </div>
+      </section>
     );
   }
 }

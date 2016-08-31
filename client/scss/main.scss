@@ -9,9 +9,18 @@ $red: #E1332D;
 $white: #FFFFFF;
 $black: #000000;
 
+$light-grey: #6D6767;
+$grey: #2B2727;
+$dark-grey: #1E1717;
+
+$indigo: #264653;
+$light-blue: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #F4A261;
+$light-red: #E76F51;
+
 /* Import Styles */
 
-@import './nav.scss';
 @import './landing.scss';
 @import './home.scss';
 
@@ -61,3 +70,18 @@ p.related a:hover {
 }
 
 /* Global Styles */
+
+html, body {
+  overflow-x: hidden;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+}
