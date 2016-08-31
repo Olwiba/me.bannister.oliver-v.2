@@ -6,7 +6,7 @@ class Skills extends Component {
     return (
       <div className='skills'>
       	<div className='center'>
-	        <h1 className='black'>Skills page</h1>
+	        <h1 className='white'>Skills page</h1>
         </div>
       </div>
     );

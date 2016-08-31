@@ -27887,7 +27887,7 @@
 	          { className: 'center' },
 	          _react2.default.createElement(
 	            'h1',
-	            { className: 'black' },
+	            { className: 'white' },
 	            'Skills page'
 	          )
 	        )

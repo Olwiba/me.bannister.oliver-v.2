@@ -329,8 +329,25 @@ p {
   height: 100vh;
   width: 100vw;
   background: url("/resources/images/grass.jpg");
-  background-position: bottom center;
-  background-size: 100%; }
+  background-position: bottom;
+  background-size: cover; }
+
+.attributes {
+  margin-top: -35px;
+  height: 50vh;
+  width: 110vw;
+  background: url("/resources/images/asfalt-dark.png") #6D6767;
+  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-3deg);
+  /* Chrome, Safari, Opera */ }
+
+.skills {
+  margin-top: -35px;
+  height: 110vh;
+  width: 100vw;
+  background: #1E1717; }
 
 /* Fonts */
 .black {
