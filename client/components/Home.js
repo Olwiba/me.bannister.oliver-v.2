@@ -6,6 +6,7 @@ import Intro from './Home-Components/Intro'
 import About from './Home-Components/About'
 import Attributes from './Home-Components/Attributes'
 import Skills from './Home-Components/Skills'
+import Interests from './Home-Components/Interests'
 import History from './Home-Components/History'
 import Projects from './Home-Components/Projects'
 
@@ -30,6 +31,7 @@ class Home extends Component {
         <About/>
         <Attributes/>
         <Skills/>
+        <Interests/>
         <History/>
         <Projects/>
       </div>

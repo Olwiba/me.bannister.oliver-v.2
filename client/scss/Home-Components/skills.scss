@@ -2,5 +2,8 @@
   margin-top: -35px;
 	height: 110vh;
 	width: 100vw;
-  background: $dark-grey;	
+  background: url('/resources/images/pencils.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;	
 }

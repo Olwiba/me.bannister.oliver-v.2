@@ -6,7 +6,7 @@ class History extends Component {
     return (
       <div className='history'>
       	<div className='center'>
-	        <h1 className='black'>History page</h1>
+	        <h1 className='white'>History page</h1>
         </div>
       </div>
     );

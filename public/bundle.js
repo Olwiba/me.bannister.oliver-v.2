@@ -27490,6 +27490,10 @@
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
+	var _Interests = __webpack_require__(253);
+
+	var _Interests2 = _interopRequireDefault(_Interests);
+
 	var _History = __webpack_require__(251);
 
 	var _History2 = _interopRequireDefault(_History);
@@ -27532,6 +27536,7 @@
 	        _react2.default.createElement(_About2.default, null),
 	        _react2.default.createElement(_Attributes2.default, null),
 	        _react2.default.createElement(_Skills2.default, null),
+	        _react2.default.createElement(_Interests2.default, null),
 	        _react2.default.createElement(_History2.default, null),
 	        _react2.default.createElement(_Projects2.default, null)
 	      );
@@ -27887,7 +27892,7 @@
 	          { className: 'center' },
 	          _react2.default.createElement(
 	            'h1',
-	            { className: 'white' },
+	            { className: 'black' },
 	            'Skills page'
 	          )
 	        )
@@ -28001,7 +28006,7 @@
 	          { className: 'center' },
 	          _react2.default.createElement(
 	            'h1',
-	            { className: 'black' },
+	            { className: 'white' },
 	            'History page'
 	          )
 	        )
@@ -28074,6 +28079,67 @@
 	}(_react.Component);
 
 	exports.default = Attributes;
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Interests = function (_Component) {
+	  _inherits(Interests, _Component);
+
+	  function Interests() {
+	    _classCallCheck(this, Interests);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Interests).apply(this, arguments));
+	  }
+
+	  _createClass(Interests, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'section',
+	        { id: 'section-interests' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'interests' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'center' },
+	            _react2.default.createElement(
+	              'h1',
+	              { className: 'black' },
+	              'Interests section'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Interests;
+	}(_react.Component);
+
+	exports.default = Interests;
 
 /***/ }
 /******/ ]);
