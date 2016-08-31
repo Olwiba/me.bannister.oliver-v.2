@@ -4,6 +4,8 @@ import Navigation from './Home-Components/Navigation'
 import Splash from './Home-Components/Splash'
 import Intro from './Home-Components/Intro'
 import About from './Home-Components/About'
+import Skills from './Home-Components/Skills'
+import Projects from './Home-Components/Projects'
 
 class Home extends Component {
   static propTypes = {
@@ -24,6 +26,8 @@ class Home extends Component {
         <Splash/>
         <Intro/>
         <About/>
+        <Skills/>
+        <Projects/>
       </div>
     );
   }

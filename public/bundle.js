@@ -27482,6 +27482,14 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
+	var _Skills = __webpack_require__(249);
+
+	var _Skills2 = _interopRequireDefault(_Skills);
+
+	var _Projects = __webpack_require__(250);
+
+	var _Projects2 = _interopRequireDefault(_Projects);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27513,7 +27521,9 @@
 	        _react2.default.createElement(_Navigation2.default, null),
 	        _react2.default.createElement(_Splash2.default, null),
 	        _react2.default.createElement(_Intro2.default, null),
-	        _react2.default.createElement(_About2.default, null)
+	        _react2.default.createElement(_About2.default, null),
+	        _react2.default.createElement(_Skills2.default, null),
+	        _react2.default.createElement(_Projects2.default, null)
 	      );
 	    }
 	  }]);
@@ -27822,6 +27832,120 @@
 	}(_react.Component);
 
 	exports.default = About;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Skills = function (_Component) {
+	  _inherits(Skills, _Component);
+
+	  function Skills() {
+	    _classCallCheck(this, Skills);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Skills).apply(this, arguments));
+	  }
+
+	  _createClass(Skills, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'skills' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'center' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'black' },
+	            'Skills page'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Skills;
+	}(_react.Component);
+
+	exports.default = Skills;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(2);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Projects = function (_Component) {
+	  _inherits(Projects, _Component);
+
+	  function Projects() {
+	    _classCallCheck(this, Projects);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Projects).apply(this, arguments));
+	  }
+
+	  _createClass(Projects, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'projects' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'center' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'black' },
+	            'Projects page'
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Projects;
+	}(_react.Component);
+
+	exports.default = Projects;
 
 /***/ }
 /******/ ]);
