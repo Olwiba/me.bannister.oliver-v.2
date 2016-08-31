@@ -27777,7 +27777,7 @@
 	            { className: 'center' },
 	            _react2.default.createElement(
 	              'h1',
-	              { className: 'white' },
+	              { className: 'black' },
 	              'Intro section'
 	            )
 	          )

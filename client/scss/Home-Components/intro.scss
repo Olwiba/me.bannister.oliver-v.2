@@ -1,5 +1,9 @@
 .intro {
+  margin-top: -35px;
 	height: 75vh;
-	width: 100vw;
-  background: url('/resources/images/asfalt-light.png') $grey;	
+	width: 110vw;
+  background: url('/resources/images/asfalt-dark.png') $light-grey;
+  transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg); /* IE 9 */
+      -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */	
 }

@@ -319,17 +319,25 @@ p {
   background: url("/resources/images/summer-blur.jpg");
   background-position: center center;
   background-size: 100%;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  z-index: 100; }
 
 .intro {
+  margin-top: -35px;
   height: 75vh;
-  width: 100vw;
-  background: url("/resources/images/asfalt-light.png") #2B2727; }
+  width: 110vw;
+  background: url("/resources/images/asfalt-dark.png") #6D6767;
+  transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-3deg);
+  /* Chrome, Safari, Opera */ }
 
 .about {
+  margin-top: -35px;
   height: 100vh;
   width: 100vw;
-  background: url("/resources/images/grass.jpg");
+  background: url("/resources/images/space.png");
   background-position: bottom;
   background-size: cover;
   background-attachment: fixed; }
@@ -347,11 +355,11 @@ p {
 
 .skills {
   margin-top: -35px;
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
-  background: url("/resources/images/pencils.jpg");
-  background-position: bottom;
-  background-size: cover;
+  background: url("/resources/images/clouds.jpg");
+  background-position: center center;
+  background-size: 100%;
   background-attachment: fixed; }
 
 .interests {
