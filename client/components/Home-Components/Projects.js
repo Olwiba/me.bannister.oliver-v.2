@@ -1,16 +1,46 @@
 import React, { Component } from 'react'
 
-class Projects extends Component {
+class ProjectAbout extends Component {
 
   render() {
     return (
       <div className='projects'>
-      	<div className='center'>
-	        <h1 className='black'>Projects page</h1>
+        <div className='title center'>
+          <h1 className='white'>Projects...</h1>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
+        </div>
+        <div id='container3' className='container blur-bg shaded'>
+          <div className='content'>
+        		<h1 className='white'>Here is some text about projects..</h1>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default Projects
+export default ProjectAbout

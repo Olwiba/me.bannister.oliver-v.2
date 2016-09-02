@@ -7,8 +7,8 @@ import About from './Home-Components/About'
 import Attributes from './Home-Components/Attributes'
 import Skills from './Home-Components/Skills'
 import Interests from './Home-Components/Interests'
-import History from './Home-Components/History'
 import Projects from './Home-Components/Projects'
+import Contact from './Home-Components/Contact'
 
 class Home extends Component {
   static propTypes = {
@@ -32,8 +32,8 @@ class Home extends Component {
         <Attributes/>
         <Skills/>
         <Interests/>
-        <History/>
         <Projects/>
+        <Contact/>
       </div>
     );
   }

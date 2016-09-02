@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
-class History extends Component {
+class Contact extends Component {
 
   render() {
     return (
-      <div className='history'>
+      <div className='contact'>
       	<div className='center'>
-	        <h1 className='white'>History page</h1>
+	        <h1 className='black'>Contact page</h1>
         </div>
       </div>
     );
   }
 }
 
-export default History
+export default Contact

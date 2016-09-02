@@ -19,5 +19,3 @@ render((
 console.log('Oliver.Bannister.me Has finished loading...')
 console.log('Checking out my code? Take a look at my Github for pre-bundled syntax.')
 console.log('____(o^^)o_____(^-^*)____')
-
-

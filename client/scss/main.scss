@@ -36,6 +36,10 @@ $light-red: #E76F51;
 	color: $white;
 }
 
+.grey {
+  color: $dark-grey;
+}
+
 h1, h2, a, p {
   font-weight: 100;
 }
@@ -47,6 +51,8 @@ h1, h2, a, p {
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 45px;
+  margin: 0;
+  text-shadow: 1px 1px 2px black; 
 }
 
 h2 {
