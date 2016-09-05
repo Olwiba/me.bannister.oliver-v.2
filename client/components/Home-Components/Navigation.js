@@ -7,7 +7,7 @@ class Navigation extends Component {
       <div className='navigation'>
         <header className='main_h'>
 		    <div className='row'>
-		        <a className='logo' href='#'>Olwiba</a>
+		        <a href='#'><img src='/resources/images/olwiba-logo.png' alt='Olwiba' className='logo' /></a>
 		        <div className='mobile-toggle'>
 		            <span></span>
 		            <span></span>

@@ -146,13 +146,11 @@
   height: 10vh;
   z-index: 999;
   width: 100%;
-  padding-top: 17px;
   background: none;
-  overflow: hidden;
+  overflow: visible;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
-  top: -100px;
   padding-bottom: 6px;
   /*font-family: "Montserrat", sans-serif;*/ }
 
@@ -168,20 +166,18 @@
   -webkit-transform: rotate(-90deg); }
 
 .navigation .sticky {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(30, 23, 23, 0.8);
   opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro; }
+  border-bottom: 3px solid #393535; }
 
 .navigation .logo {
-  width: 50px;
+  height: 22vh;
+  width: auto;
   font-size: 25px;
   color: #FFFFFF;
-  text-transform: uppercase;
   float: left;
   display: block;
-  margin-top: 0;
-  line-height: 1;
+  margin-top: -5vh;
   margin-bottom: 10px; }
 
 @media only screen and (max-width: 766px) {
@@ -252,7 +248,7 @@
 
 .navigation .row {
   width: 100%;
-  max-width: 940px;
+  max-width: 90vw;
   margin: 0 auto;
   position: relative;
   padding: 0 2%; }
@@ -314,7 +310,7 @@ p {
   height: 100vh;
   width: 100vw;
   background: url("/resources/images/summer-blur.jpg");
-  background-position: center center;
+  background-position: top;
   background-size: 100%;
   background-attachment: fixed;
   z-index: 100; }
@@ -326,6 +322,7 @@ p {
 
 .intro {
   margin-top: -35px;
+  padding-bottom: 30px;
   height: 75vh;
   width: 110vw;
   background: url("/resources/images/asfalt-dark.png") #6D6767;
@@ -334,10 +331,40 @@ p {
   /* IE 9 */
   -webkit-transform: rotate(-3deg);
   /* Chrome, Safari, Opera */ }
+  .intro .intro-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    /* IE 9 */
+    -webkit-transform: rotate(3deg);
+    /* Chrome, Safari, Opera */ }
+  .intro .essentials {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    text-align: center; }
+    .intro .essentials .essential-item {
+      margin-top: 10px;
+      width: 30%;
+      height: 250px; }
+    .intro .essentials .essential-img {
+      height: 150px;
+      top: 0; }
 
 .about {
+  text-align: center;
   margin-top: -35px;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background: url("/resources/images/space.png");
   background-position: bottom;

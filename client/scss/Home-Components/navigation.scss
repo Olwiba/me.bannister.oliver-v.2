@@ -6,13 +6,11 @@
 	  height: 10vh;
 	  z-index: 999;
 	  width: 100%;
-	  padding-top: 17px;
 	  background: none;
-	  overflow: hidden;
+	  overflow: visible;
 	  -webkit-transition: all 0.3s;
 	  transition: all 0.3s;
 	  opacity: 0;
-	  top: -100px;
 	  padding-bottom: 6px;
 	  /*font-family: "Montserrat", sans-serif;*/
 	}
@@ -32,21 +30,19 @@
 	}
 
 	.sticky {
-	  background-color: rgba(0, 0, 0, 0.8);
+	  background-color: rgba(30, 23, 23, 0.8);
 	  opacity: 1;
-	  top: 0px;
-	  border-bottom: 1px solid gainsboro;
+	  border-bottom: 3px solid #393535;
 	}
 
 	.logo {
-	  width: 50px;
+		height: 22vh;
+	  width: auto;
 	  font-size: 25px;
 	  color: $white;
-	  text-transform: uppercase;
 	  float: left;
 	  display: block;
-	  margin-top: 0;
-	  line-height: 1;
+	  margin-top: -5vh;
 	  margin-bottom: 10px;
 	}
 	@media only screen and (max-width: 766px) {
@@ -125,7 +121,7 @@
 
 	.row {
 	  width: 100%;
-	  max-width: 940px;
+	  max-width: 90vw;
 	  margin: 0 auto;
 	  position: relative;
 	  padding: 0 2%;
@@ -196,4 +192,3 @@ p {
 }
 
 */
-
