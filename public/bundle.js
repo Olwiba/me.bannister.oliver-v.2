@@ -27863,11 +27863,64 @@
 	        { className: 'about' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'center' },
+	          { className: 'about-content' },
 	          _react2.default.createElement(
-	            'h1',
-	            { className: 'black' },
-	            'About page'
+	            'div',
+	            { className: 'about1' },
+	            _react2.default.createElement('img', { src: '/resources/images/myself.png', alt: 'Myself', className: 'portrait' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'about2' },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'Ollie Bannister'
+	            ),
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'Full-Stack Web Developer'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Check me out on the following social medias:'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                ''
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                ''
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                ''
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: '#' },
+	                ''
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Want to know more? Check out my CV below:'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#', className: 'download-cv' },
+	              ''
+	            )
 	          )
 	        )
 	      );
