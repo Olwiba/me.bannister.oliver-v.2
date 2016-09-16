@@ -1,0 +1,18 @@
+.splash {
+	height: 100vh;
+	width: 100vw;
+	background: url('/resources/images/summer-blur.jpg');
+	background-position: top;
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index: 100;
+
+	.smileFace {
+		width: 15vw;
+		margin-bottom: 20px;
+	}
+
+	.downArrow {
+		width: 5vw;
+	}
+}

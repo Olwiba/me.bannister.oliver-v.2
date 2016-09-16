@@ -1,2 +1,98 @@
-@import './nav.scss';
+/* Import Fonts */
+
+@import 'https://fonts.googleapis.com/css?family=Lobster|Raleway';
+
+
+/* Colours */
+
+$red: #E1332D;
+$white: #FFFFFF;
+$black: #000000;
+$light-black: #141212;
+
+$light-grey: #6D6767;
+$grey: #2B2727;
+$dark-grey: #1E1717;
+
+$indigo: #264653;
+$light-blue: #2A9D8F;
+$yellow: #E9C46A;
+$orange: #F4A261;
+$light-red: #E76F51;
+
+/* Import Styles */
+
 @import './landing.scss';
+@import './home.scss';
+
+
+/* Fonts */
+
+.black {
+  color: $black;
+}
+
+.white {
+	color: $white;
+}
+
+.grey {
+  color: $dark-grey;
+}
+
+h1, h2, a, p {
+  font-weight: 100;
+}
+.tinted h1, .tinted h2, .tinted a, .tinted p {
+  color: black;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  margin: 20px;
+}
+p.related {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+p.related a {
+  font-weight: 700;
+  text-decoration: none;
+}
+p.related a:hover {
+  text-decoration: underline;
+}
+
+/* Global Styles */
+
+html, body {
+  overflow-x: hidden;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+}

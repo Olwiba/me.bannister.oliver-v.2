@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import Landing from './Landing';
+import React, { Component, PropTypes } from 'react'
+import Landing from './Landing'
 
 class App extends Component {
   static propTypes = {
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Landing />
+        {this.props.children}
       </div>
     );
   }

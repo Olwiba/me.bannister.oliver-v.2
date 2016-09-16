@@ -1,0 +1,45 @@
+.intro {
+  margin-top: -35px;
+  padding-bottom: 30px; 
+	height: 75vh;
+	width: 110vw;
+  background: url('/resources/images/asfalt-dark.png') $light-grey;
+  transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg); /* IE 9 */
+      -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+
+    .intro-content {
+      height: 100%;
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      transform: rotate(3deg);
+        -ms-transform: rotate(3deg); /* IE 9 */
+          -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    }
+
+    .essentials {
+      width: 80vw;
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: flex-start;
+      align-items: center;
+      text-align: center;
+
+      .essential-item {
+        margin-top: 10px;
+        width: 30%;
+        height: 250px;
+      }
+
+      .essential-img {
+        height: 150px;
+        top: 0;
+      }
+  }
+}
