@@ -2,7 +2,9 @@
 ## Oliver.Bannister.me
 ### What am I looking at?
 
-This is a place for me to store all the source code for my digital portfolio. 
+This is a version of my personal portfolio that I am building from scratch. I want to try and build this without using a framework.
+
+A place for me to store all the source code for my digital portfolio. 
 This is the code that will be compiled and served on [my personal site](https://oliver.bannister.me).
 
 ### What is this for? 
